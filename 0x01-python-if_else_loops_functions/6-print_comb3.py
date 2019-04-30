@@ -1,2 +1,7 @@
 #!/usr/bin/python3
-listint_t *insert_node(listint_t **head, int number);
+for n1 in range(0, 10):
+    for n2 in range(n1 + 1 , 10):
+        if n1 == 8 and n2 == 9:
+            print("{:d}{:d}".format(n1, n2));
+        else:
+            print("{:d}{:d}".format(n1, n2), end=", ")
