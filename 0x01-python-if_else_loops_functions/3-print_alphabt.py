@@ -1,2 +1,4 @@
 #!/usr/bin/python3
-def add(a, b):
+for letter in range(97, 123):
+    if (letter != 101 and letter != 113):
+        print("{:c}".format(letter), end="")
