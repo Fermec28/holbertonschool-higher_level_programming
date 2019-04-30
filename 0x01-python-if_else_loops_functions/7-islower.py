@@ -1,2 +1,6 @@
 #!/usr/bin/python3
-def remove_char_at(str, n):
+def islower(c):
+    if ord(c) >= 97 and ord(c) <= 122:
+        return True
+    else:
+        return False
