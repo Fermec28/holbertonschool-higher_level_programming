@@ -1,2 +1,3 @@
 #!/usr/bin/python3
-def pow(a, b):
+for number in range(0, 99):
+    print("{:d} = 0x{:x}".format(number, number))
