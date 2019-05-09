@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def best_score(a_dictionary):
-    if a_dictionary != None:
+    if a_dictionary:
         aux = {}
         aux["key"] = list(a_dictionary.keys())[0]
         aux["val"] = a_dictionary[aux["key"]]
