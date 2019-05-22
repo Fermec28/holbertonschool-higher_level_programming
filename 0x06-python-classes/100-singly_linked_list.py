@@ -1,5 +1,9 @@
  #!/usr/bin/python3
+
+
 class Node:
+    """ Model of Node"""
+
     def __init__(self, data, next_node=None):
         self.data = data
         self.next_node = next_node
@@ -27,6 +31,8 @@ class Node:
 
 
 class SinglyLinkedList:
+    """ Model of single linked list use Node class"""
+
     def __init__(self):
         self.__head = None
 
