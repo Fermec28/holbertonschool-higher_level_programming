@@ -59,4 +59,6 @@ class Rectangle:
         """
         calculate perimetter of Rectangle
         """
+        if (self.__height == 0 or self.width == 0):
+            return 0
         return 2 * self.__height + 2 * self.width
