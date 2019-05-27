@@ -1,0 +1,11 @@
+===================================
+	Rectangle intantiation
+===================================
+>>> Rectangle = __import__('1-rectangle').Rectangle
+>>> my_rectangle = Rectangle(2, 4)
+>>> my_rectangle.__dict__
+{'_Rectangle__width': 2, '_Rectangle__height': 4}
+>>> my_rectangle.width = 10
+>>> my_rectangle.height = 3
+>>> my_rectangle.__dict__
+{'_Rectangle__width': 10, '_Rectangle__height': 3}
