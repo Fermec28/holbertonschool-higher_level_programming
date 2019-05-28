@@ -71,9 +71,10 @@ class Rectangle:
         """
         String Representation
         """
-        aux = " \n"
+        aux = ""
         for i in range(self.__height):
             if self.__width <= 0:
+                aux = " \n"
                 break
             aux = "{}{}\n".format(aux, str(self.print_symbol) * self.__width)
         return aux[:-1]
