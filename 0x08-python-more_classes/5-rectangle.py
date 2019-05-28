@@ -72,11 +72,14 @@ class Rectangle:
             aux = "{}{}\n".format(aux, "#" * self.__width)
         return aux[:-1]
 
-    def  __repr__(self):
+    def __repr__(self):
         """
         Representation of Rectangle
         """
         return "Rectangle({}, {})".format(self.__width, self.__height)
 
     def __del__(self):
+        """
+        Destructor
+        """
         print("Bye rectangle...")
