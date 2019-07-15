@@ -2,4 +2,4 @@
 SELECT score, COUNT(score) AS average
 FROM second_table
 GROUP BY score
-ORDER BY score DESC;
+ORDER BY COUNT(score) DESC;
