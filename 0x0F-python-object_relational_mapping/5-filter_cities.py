@@ -14,9 +14,9 @@ if __name__ == "__main__":
         ORDER BY \
         cities.id ASC".format(sys.argv[4].split(";")[0].split('\'')[0]))
         query_rows = cur.fetchall()
-        result =""
+        result = ""
         for row in query_rows:
-            result = "{}{}, ".format(result,row[0])
+            result = "{}{}, ".format(result, row[0])
         print(result[:-2])
         cur.close()
         conn.close()
