@@ -8,7 +8,7 @@ if __name__ == "__main__":
                            passwd=sys.argv[2], db=sys.argv[3],
                            charset="utf8")
     cur = conn.cursor()
-    cur.execute("SELECT id, name FROM states WHERE NAME LIKE 'N%' \
+    cur.execute("SELECT id, name FROM states WHERE NAME LIKE BINARY 'N%' \
     ORDER BY id ASC")
     query_rows = cur.fetchall()
     for row in query_rows:
