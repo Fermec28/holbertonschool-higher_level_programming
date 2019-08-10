@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" takes in arguments and displays all records preventing sql inyection"""
 import sys
 import MySQLdb
 
