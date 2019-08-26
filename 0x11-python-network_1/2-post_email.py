@@ -5,11 +5,9 @@ if __name__ == "__main__":
     import urllib.request
     from sys import argv
     url = argv[1]
-    values = {'email' : argv[2]}
+    values = {'email': argv[2]}
     data = urllib.parse.urlencode(values)
-    print(data)
     data = data.encode('utf-8')
-    print(data)
     req = urllib.request.Request(url, data)
     with urllib.request.urlopen(req) as response:
         the_page = response.read()
