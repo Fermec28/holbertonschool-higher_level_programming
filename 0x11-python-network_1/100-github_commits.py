@@ -7,8 +7,8 @@ if __name__ == "__main__":
     print(req)
     res = requests.get(req)
     i = 1
-    for commit in res.json():
-        print("{}: {}".format(commit["sha"], commit["commit"]["author"]["name"]))
+    for comit in res.json():
+        print("{}: {}".format(comit["sha"], comit["commit"]["author"]["name"]))
         if i == 10:
             break
         i += 1
