@@ -3,7 +3,7 @@
 if __name__ == "__main__":
     import requests
     from sys import argv
-    req = 'https://api.github.com/repos/{}/{}/commits'.format(argv[1], argv[2])
+    req = 'https://api.github.com/repos/{}/{}/commits'.format(argv[2], argv[1])
     res = requests.get(req)
     i = 1
     for comit in res.json():
