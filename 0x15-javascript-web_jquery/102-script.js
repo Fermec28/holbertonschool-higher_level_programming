@@ -5,7 +5,7 @@ $(document).ready(function () {
       {
         url: 'https://www.fourtonfish.com/hellosalut/',
         type: 'GET',
-        data: { lang: language },
+        data: { lang: language }
       })
       .done(function (data) {
         $('#hello').html(`<p> ${data.hello} </p>`);
